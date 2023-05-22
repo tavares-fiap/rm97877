@@ -73,7 +73,11 @@ addEventListener("click", (evt)=>{
             if(usuarioValidado.nomeUsuario != ""){
                 msgStatus.setAttribute("style", "color:#00ff00;");
                 msgStatus.innerHTML = <span><strong>Login efetuado com sucesso!</strong></span>;
-                
+
+
+                setTimeout(()=>{
+                    window.location.href = "../sucesso.html";
+                },3000);
             }
 
             }else{
